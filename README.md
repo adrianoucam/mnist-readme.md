@@ -7,7 +7,9 @@ Este projeto acadêmico implementa uma rede neural do tipo Multi-Layer Perceptro
 
 O objetivo é unir a flexibilidade e facilidade de uso do Python (com uma interface que simula o Keras/Scikit-Learn) ao poder de processamento bruto da linguagem C.
 
-Visão Geral do ProjetoDiferente das implementações puramente em Python, este projeto delega todo o treinamento matemático (Forward e Backward Pass) para uma biblioteca dinâmica (.dll) escrita em C. 
+Visão Geral do Projeto
+
+Diferente das implementações puramente em Python, este projeto delega todo o treinamento matemático (Forward e Backward Pass) para uma biblioteca dinâmica (.dll) escrita em C. 
 
 Essa abordagem é a mesma utilizada por grandes frameworks como PyTorch e TensorFlow.
 
