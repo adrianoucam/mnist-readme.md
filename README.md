@@ -74,6 +74,36 @@ Explorador de Fluxo de Memória Híbrido
 
 Para entender como os dados viajam entre o Python e o C durante o treinamento, utilize a ferramenta interativa abaixo:
 
+python3 teste_mnist.py
+
+Feature matrix (x_train): (60000, 28, 28)
+
+Target matrix (y_train): (60000,)
+
+Treinamento iniciado. Motor: C nativo (Alta Performance)
+
+Epoch 1/10 - loss: 0.1741 - accuracy: 0.9473 - val_loss: 0.1776 - val_accuracy: 0.9457
+
+Epoch 2/10 - loss: 0.1213 - accuracy: 0.9614 - val_loss: 0.1422 - val_accuracy: 0.9568
+
+Epoch 3/10 - loss: 0.0910 - accuracy: 0.9705 - val_loss: 0.1277 - val_accuracy: 0.9631
+
+Epoch 4/10 - loss: 0.0639 - accuracy: 0.9785 - val_loss: 0.1130 - val_accuracy: 0.9692
+
+Epoch 5/10 - loss: 0.0517 - accuracy: 0.9826 - val_loss: 0.1079 - val_accuracy: 0.9699
+
+Epoch 6/10 - loss: 0.0418 - accuracy: 0.9862 - val_loss: 0.1070 - val_accuracy: 0.9720
+
+Epoch 7/10 - loss: 0.0312 - accuracy: 0.9892 - val_loss: 0.1074 - val_accuracy: 0.9736
+
+Epoch 8/10 - loss: 0.0306 - accuracy: 0.9896 - val_loss: 0.1115 - val_accuracy: 0.9728
+
+Epoch 9/10 - loss: 0.0196 - accuracy: 0.9931 - val_loss: 0.1046 - val_accuracy: 0.9755
+
+Epoch 10/10 - loss: 0.0274 - accuracy: 0.9908 - val_loss: 0.1133 - val_accuracy: 0.9738
+
+Test loss, Test accuracy: [0.10917699358883358, 0.9728]
+
 
 Licença
 
