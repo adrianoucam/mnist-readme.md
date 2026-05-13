@@ -104,6 +104,7 @@ Epoch 10/10 - loss: 0.0274 - accuracy: 0.9908 - val_loss: 0.1133 - val_accuracy:
 
 Test loss, Test accuracy: [0.10917699358883358, 0.9728]
 
+![alt text](https://github.com/adrianoucam/C-and-python-testing-mnist-dataset/blob/main/Figure_1.png?raw=true)
 
 Licença
 
