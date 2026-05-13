@@ -1,5 +1,5 @@
 # mnist-readme.md
-Using MLP in dataset MNIST  - with hardcode in C and python optimized
+Using MLP in dataset MNIST  - with Core in C and python optimized
 
 Multi-Layer Perceptron (MLP): Core em C & API Híbrida em Python 
 
@@ -9,15 +9,23 @@ O objetivo é unir a flexibilidade e facilidade de uso do Python (com uma interf
 
 Visão Geral do ProjetoDiferente das implementações puramente em Python, este projeto delega todo o treinamento matemático (Forward e Backward Pass) para uma biblioteca dinâmica (.dll) escrita em C. 
 
-Essa abordagem é a mesma utilizada por grandes frameworks como PyTorch e TensorFlow.Estrutura do Sistema:Motor Computacional (C): Implementação de baixo nível com foco em coerência de cache e vetorização SIMD.
+Essa abordagem é a mesma utilizada por grandes frameworks como PyTorch e TensorFlow.Estrutura do Sistema:Motor Computacional (C): 
+
+Implementação de baixo nível com foco em coerência de cache e vetorização SIMD.
 
 Interface de Alto Nível (Python): Classe Sequential que gerencia matrizes NumPy e faz a ponte via ctypes.
 
-Vantagens da Implementação em CUtilizar C para o treinamento de redes neurais oferece vantagens críticas em contextos acadêmicos e industriais:Coerência de Cache (Spatial Locality): O código foi otimizado para ler matrizes de forma contígua na RAM, minimizando cache misses e mantendo os dados próximos ao processador.
+Vantagens da Implementação em CUtilizar C para o treinamento de redes neurais oferece vantagens críticas em contextos acadêmicos e industriais:
+
+Coerência de Cache (Spatial Locality): 
+
+O código foi otimizado para ler matrizes de forma contígua na RAM, minimizando cache misses e mantendo os dados próximos ao processador.
 
 Vetorização SIMD: Ao utilizar flags de compilação modernas, o processador consegue realizar múltiplas operações matemáticas (somas e multiplicações) em um único ciclo de clock.Gerenciamento de Memória In-Place: 
 
-O C manipula os ponteiros de memória alocados pelo NumPy, eliminando o custo de copiar dados entre as linguagens.Static Inlining: As funções de ativação (como a Sigmoide) são injetadas diretamente nos loops de cálculo, removendo o overhead de chamadas de função.
+O C manipula os ponteiros de memória alocados pelo NumPy, eliminando o custo de copiar dados entre as linguagens.
+
+Static Inlining: As funções de ativação (como a Sigmoide) são injetadas diretamente nos loops de cálculo, removendo o overhead de chamadas de função.
 
 Compilação e InstalaçãoPara gerar a biblioteca dinâmica no Windows (utilizando MSYS2/MinGW-w64), utilize os comandos abaixo no terminal:Compilação 
 
