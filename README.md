@@ -9,7 +9,11 @@ O objetivo é unir a flexibilidade e facilidade de uso do Python (com uma interf
 
 Visão Geral do ProjetoDiferente das implementações puramente em Python, este projeto delega todo o treinamento matemático (Forward e Backward Pass) para uma biblioteca dinâmica (.dll) escrita em C. 
 
-Essa abordagem é a mesma utilizada por grandes frameworks como PyTorch e TensorFlow.Estrutura do Sistema:Motor Computacional (C): 
+Essa abordagem é a mesma utilizada por grandes frameworks como PyTorch e TensorFlow.
+
+Estrutura do Sistema:
+
+Motor Computacional (C): 
 
 Implementação de baixo nível com foco em coerência de cache e vetorização SIMD.
 
@@ -49,7 +53,8 @@ gcc -shared -O3 -march=native -ffast-math -o mlp_core.dll mlp_core.c
 
 -ffast-math: Acelera cálculos algébricos permitindo aproximações numéricas rápidas.
 
-Exemplo de UsoA API foi desenhada para ser intuitiva para quem já utiliza Scikit-Learn ou TensorFlow:
+Exemplo de Uso
+A API foi desenhada para ser intuitiva para quem já utiliza Scikit-Learn ou TensorFlow:
 
 Python
 
